@@ -30,3 +30,6 @@ rvm use ruby --install
 npm install -g bower grunt-cli
 gem install foundation
 gem install compass
+
+#Create Web Folder
+mkdir /var/www/html
