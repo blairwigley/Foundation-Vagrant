@@ -16,20 +16,21 @@ apt-get install -y nodejs
 apt-get install -y git
 
 #Install Ruby
-#apt-get install -y ruby-full
 apt-get install -y ruby-dev
 
-apt-add-repository -y ppa:rael-gc/rvm
-apt-get install -y rvm
-
-rvm get stable
-rvm use ruby --install
-
-
 #Install Foundation Stuff
+
+gem uninstall sass
+gem uninstall compass
+
 npm install -g bower grunt-cli
 gem install foundation
+
+gem install sass -v 3.4.0
+
 gem install compass
+gem install bundler
+bundle install
 
 #Create Web Folder
-mkdir /var/www/html
+mkdir  -p /var/www/html

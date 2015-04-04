@@ -16,8 +16,8 @@ foundation new MY_PROJECT
 
 cd MY_PROJECT
 
-gem install bundler
+bundle
 
-bundle exec compass watch
+compass watch -p
 
-See projects at http://127.0.0.1:4567/
+See your projects at http://127.0.0.1:4567/
