@@ -7,6 +7,9 @@ if ! [ -L /var/www ]; then
   ln -fs /vagrant /var/www
 fi
 
+# Install php5 libapache2-mod-php5
+sudo apt-get install -y lamp-server^
+
 #Install node.js
 apt-get install -y curl
 curl -sL https://deb.nodesource.com/setup | bash -
